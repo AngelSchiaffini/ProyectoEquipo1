@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="registro.js" defer></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>NutriRed Comedores</title>
+    <style>
+        h1, h2, h3, body, em {
+          font-family: "Poppins", sans-serif;
+        }
+      </style>
+</head>
+<body>
+
+<div class="banner w3-container w3-content">
+    
+    <img src="/Recursos/Banner.png" alt="Banner">
+</div>
+
+
+
+<h2 style="font-size: 1.7em;" class="responsivo">Usuario Nuevo</h2>
+ <div class="w3-container w3-responsive">
+        <section class="seccion" id="usuarioForm">
+            <div class="form-box">
+                <div class="form-value">
+                    <form id="registroForm">
+                  <h2 style="font-size: 1.7em;">Usuario Nuevo</h2>
+                  <table cellspacing="10">
+                    <tr>
+                      <td>
+                        <div class="inputbox">
+                          <input type="text" id="nombre" required>
+                          <label for="nombre">Nombre(s)</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="inputbox">
+                          <input type="text" id="Apellido1" required>
+                          <label for="Apellido1">Apellido Paterno</label>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="inputbox">
+                          <input type="text" id="Apellido2" required>
+                          <label for="Apellido2">Apellido Materno</label>
+                        </div>
+                      </td>
+                      <td>
+                      <div class="inputbox">
+                          <input type="text" id="Curp" minlength="18" maxlength="18" required>
+                          <label for="Curp">Curp</label>
+                        </div>
+                      </td>
+                      <td>
+                         <tr>
+                             <td>
+                      <div class="casilla">
+                        <label for="Nacionalidad">Nacionalidad:</label>
+                        <select name="Nacionalidad" id="Nacionalidad" form="NacionalidadForm">
+                          <option value="México">México</option>
+                          <option value="Guatemala">Guatemala</option>
+                          <option value="El Salvador">El Salvador</option>
+                          <option value="Chile">Chile</option>
+                          <option value="Brasil">Brasil</option>
+                          <option value="Perú">Perú</option>
+                          <option value="Honduras">Honduras</option>
+                          <option value="Bolivia">Bolivia</option>
+                          <option value="Venezuela">Venezuela</option>
+                          <option value="Ecuador">Ecuador</option>
+                          <option value="Cuba">Cuba</option>
+                          <option value="Belice">Belice</option>
+                          <option value="Uruguay">Uruguay</option>
+                          <option value="Argentina">Argentina</option>
+                          <option value="Republica Dominicana">Republica Dominicana</option>
+                          <option value="Nicaragua">Nicaragua</option>
+                          <option value="Costa Rica">Costa Rica</option>
+                          <!-- Agrega más países según sea necesario -->
+                        </select>
+                      </div>
+                      </td>
+                      <td>
+                        <div class="casilla">
+                          <label for="genero">Género:</label>
+                          <select name="genero" id="genero" form="generoform" style="display: block;">
+                            <option value="M">Masculino</option>
+                            <option value="F">Femenino</option>
+                            <option value="O">Otro</option>
+                          </select>
+                        </div>
+                      </td>
+                      </tr>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label for="fechaNacimiento" style="font-size: 0.8em;">Fecha de nacimiento</label>
+                        <br>
+                        <input class="calendarioNac" type="date" id="fechaNacimiento" required style="width: 100px; height: 30px; font-size: 0.8em;">
+                      </td>
+                      <td>
+                        <div class="casilla">
+                          <label for="condicion">Condición:</label>
+                          <select name="condicion" id="condicion" form="condicionform">
+                            <option value="No aplica">No aplica</option>
+                            <option value="Persona mayor de 60 años">Persona mayor de 60 años</option>
+                            <option value="Menor de edad">Menor de edad</option>
+                            <option value="Persona indígena">Persona indígena</option>
+                            <option value="Persona con discapacidad">Persona con discapacidad</option>
+                            <option value="Persona perteneciente al colectivo LGBTQ+">Persona perteneciente al colectivo LGBTQ+</option>
+                            <option value="Migrante o desplazado por conflictos">Migrante o desplazado por conflictos</option>
+                            <option value="Persona en condición de calle">Persona en condición de calle</option>
+                            <option value="Mujer embarazada">Mujer embarazada</option>
+                            <option value="Trabajador/a informal">Trabajador/a informal</option>
+                            <option value="Otra condición">Otra condición</option>
+                          </select>
+                        </div>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div class="inputbox">
+                          <input type="text" id="celular" required maxlength="10">
+                          <label for="celular">Celular</label>
+                        </div>
+                      </td>
+                      <td>
+                        <div class="inputbox">
+                          <input type="email" id="correo" required>
+                          <label for="correo">Correo</label>
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="boton">
+        <!-- Botón de registro -->
+                    <button type="submit" class="botonCont">Registrarse</button>
+                  </div>
+                  </form>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

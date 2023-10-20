@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <title>NutriRed</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Boogaloo">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="descargarExcel.js" defer></script>
+    <style>
+      h1, h2, h3, body, em {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-mobile">
+      <div class="w3-bar w3-large w3-mobile">
+        <h2 class="w3-bar-item">Bienvenido!</h2>
+        <img src="/Recursos/Banner.png" alt="Banner" class="w3-bar-item banner">
+      <a href="https://www.difatizapan.gob.mx/" target="_blank" class="w3-right w3-bar-item">
+        <img src="/Recursos/dif.jpeg" alt="Map symbol" style="width:150px;height: 80px;">
+      </a>
+      <img src="/Recursos/nutrired.png" alt="Map symbol" class="w3-right w3-bar-item" style="width:120px;height: 120px;">
+      
+      </div>
+
+      <div  class="barraTareas w3-bar">
+          
+        <a href="/Administrador/altacomedor.html" class="w3-bar-item w3-button w3-mobile" >Dar de alta comedor</a>
+        <a href="/Administrador/altaAdmin.html" class="w3-bar-item w3-button w3-mobile" >Dar de alta nuevo administrador</a>
+        <a href="/Administrador/bajaComedor.html" class="w3-bar-item w3-button w3-mobile" >Dar de baja comedor</a>
+        <a href="/Administrador/bajaAdmin.html" class="w3-bar-item w3-button w3-mobile" >Dar de baja administrador</a>
+        <a href="/Administrador/reportes.html" class="w3-bar-item w3-button w3-mobile" >Reportes Comedores</a>
+        <a href="https://public.tableau.com/app/profile/angel.schiaffini/viz/ComedoresDIF/Dashboard1" class="w3-bar-item w3-button w3-mobile" >Estadisticas</a>
+        <a href="https://docs.google.com/spreadsheets/d/1Y3EjxNTwb7531apqzHRQm0KRPB31NtATfbFOST68Yns/edit#gid=723548145" class="w3-bar-item w3-button w3-mobile" >Tablas Dinamicas</a>
+        <a href="#" class="w3-bar-item w3-button w3-mobile" id="downloadButton" >Descargar CSV</a>
+        <a href="/index.html" class="w3-bar-item w3-button w3-mobile" >Cerrar Sesión</a>
+        
+      </div>  
+    </div>
+      <div class="widget">
+        <div class="w3-container w3-responsive">
+          <iframe src="https://docs.google.com/spreadsheets/u/1/d/1Y3EjxNTwb7531apqzHRQm0KRPB31NtATfbFOST68Yns/htmlview"  width="1000px" height="400px" frameborder="0"></iframe>
+        </div>
+      </div>
+      <!--<a href="https://docs.google.com/spreadsheets/d/1Y3EjxNTwb7531apqzHRQm0KRPB31NtATfbFOST68Yns/edit#gid=723548145">-->
+      <!--<button class="open-button">Abrir Tablas Dinamicas</button>-->
+      <!--</a>-->
+      <!--<button id="downloadButton">Descargar CSV</button>-->
+  </body>
+
+  
+</html>

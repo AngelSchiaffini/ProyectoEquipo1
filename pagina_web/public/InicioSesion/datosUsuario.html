@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Código QR con Javascript</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+      h1, h2, h3, body, em, p {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banner w3-container w3-content">
+    
+    <img src="/Recursos/Banner.png" alt="Banner">
+  </div>
+    
+    <div class = "w3-row" style = "min-height: 10vh">
+    <div class="w3-container w3-responsive w3-third w3-left">
+    <div class="contenedorch">
+      <form action="" id="formulario" class="formulario w3-center">
+        <button class = "btnQr" style="font-family: 'Poppins'">Generar QR</button>
+      </form>
+
+      <div id="contenedorQR" class="contenedorQR w3-center"></div>
+
+      <!-- Nuevo cuadro para parientes -->
+      
+        <form action="">
+      </div>
+      </div>
+      <div class="w3-container w3-responsive w3-twothird contenedorch w3-center">
+      <h1>Lista de Familiares</h1>
+    <table id="familiaresTable" style="font-family: 'Poppins'">
+    <thead>
+        <tr>
+            <th>ID Usuario</th>
+            <th>Nombre</th>
+            <th>Apellido Paterno</th>
+            <th>Apellido Materno</th>
+            <th>Acciones</th> <!-- Agregamos una columna para los botones -->
+        </tr>
+    </thead>
+    <div>
+    <tbody>
+        <!-- Ejemplo de una fila de datos con botón de borrado -->
+        <!-- Agrega más filas de datos similares con botones de borrado -->
+    </tbody>
+        </table>
+        </div>
+        </form>
+
+          <!-- Aquí cargarás los datos de parientes desde tu API usando JavaScript -->
+          
+          <!-- Agrega más opciones según los datos que obtengas de tu API -->
+        </select>
+        <div class = "w3-row w3-container w3-center">
+          <div class="w3-col" style="width:500px"><p>Recuerda que la comida solo cuesta $13 MXN </p>
+          <br>
+          <p>¿Te estan cobrando de mas? </p>
+          <p>Reporta en 55 9148 4602</p></div>
+          <div class="w3-rest">
+           <form id="agregarParienteForm" class="formulario w3-center">
+  <table>
+    <tr>
+      <td>
+        <div class="inputbox">
+          <input type="text" id="IDnuevoP" required>
+          <label for="IDnuevoP">ID nuevo pariente:</label>
+        </div>
+      </td>
+      <td>
+        <button type="submit" class="agregarParienteButton" style="font-family: 'Poppins'">Agregar</button>
+      </td>
+    </tr>
+  </table>
+</form>
+        </div>
+        
+        </div>
+        </div>
+  </body>
+</html>

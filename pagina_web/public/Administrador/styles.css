@@ -1,0 +1,173 @@
+.barraTareas{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    justify-content: space-between;
+     text-align: center;
+    align-items: center;
+    background-color: #cd6789;
+    color: white;
+    font-size: 20px;
+}
+
+.barraTareas a {
+    flex: 1;
+    text-align: center;
+    margin: 5px;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10px;
+ 
+}
+
+
+.widget{
+   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px; /* Esto centra verticalmente */
+  width: 100%;
+  
+  /*max-width: 600px; */
+}
+
+
+.seccion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    width: 100%;
+}
+
+.seccionPequena{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+    width: 100%;
+}
+
+
+
+.form-box{
+    position: relative;
+    width: 700px;
+    height: 600px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.form-boxPequena{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.tut-form-box{
+    position: relative;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+h2{
+    font-size: 2em;
+    color: black;
+    text-align: center;
+}
+.inputbox{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid black;
+}
+.inputbox label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: black;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+top: -5px;
+}
+.inputbox input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding:0 35px 0 5px;
+    color: black;
+}
+.inputbox ion-icon{
+    position: absolute;
+    right: 8px;
+    color: black;
+    font-size: 1.2em;
+    top: 20px;
+}
+
+button {
+    width: 300px;
+    height: 40px;
+    border-radius: 40px;
+    background: #cd6789;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 0 auto; /* Centrar horizontalmente */
+}
+
+
+/* Estilos para centrar y dar formato a los botones */
+.downloadButton, .open-button {
+  display: block;
+  margin: 0 auto; /* Centrar horizontalmente */
+  padding: 10px 20px; /* Ajustar el relleno según tus preferencias *
+  color: #fff; /* Color del texto */
+  border: none;
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer;
+  text-decoration: none; /* Eliminar subrayado en el enlace */
+  font-size: 16px; /* Tamaño del texto */
+}
+
+.download-button:hover, .open-button:hover {
+  background-color: #2980b9; /* Cambio de color al pasar el cursor */
+}
+

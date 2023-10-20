@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <script src="codigo.js" defer></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <title>NutriRed Comedores</title>
+    <style>
+        h1, h2, h3, body, em {
+          font-family: "Poppins", sans-serif;
+        }
+      </style>
+</head>
+<body>
+
+<div class="banner w3-container w3-content">
+    
+    <img src="/Recursos/Banner.png" alt="Banner">
+</div>
+<div class="w3-container w3-responsive">
+    <section class="seccion" id="estudianteForm">
+        <div class="form-boxPequena">
+            <div class="form-value">
+                <form action="">
+                  <h2 style="font-size: 1.7em;">Usuario Existente</h2>
+                  <table cellspacing="20">
+                    <tr>
+                      <td>
+                        <div class="inputbox">
+                          <input type="text" id="IDingresado" required>
+                          <label for="IDingresado">Curp / ID / Celular / Correo</label>
+                          <!-- Asociamos la etiqueta con el campo de entrada utilizando el atributo "for" -->
+                        </div>
+                      </td>
+                    </tr>
+                  </table>
+                  <div class="boton">
+                    <button onclick="U_InicioSesion();" class="botonCont">Entrar</button>
+                  </div>
+                </form>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>

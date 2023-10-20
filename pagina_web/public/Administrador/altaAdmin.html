@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <script src="altaAdmin.js" defer></script>
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <style>
+    h1, h2, h3, body, em {
+      font-family: "Poppins", sans-serif;
+    }
+  </style>
+  <title>Alta de Administrador</title>
+</head>
+<body>
+  <div class="banner">
+        <img src="/Recursos/Banner.png" alt="Banner">
+    </div>
+  <section class="seccion" id="comedorForm" >
+        <div class="form-box">
+            <div class="form-value">
+  <h1>Alta de Administrador</h1>
+  <form id="altaAdminForm">
+    <div class="inputbox">
+      <input type="text" id="Nombre" required><br>
+    <label for="Nombre">Nombre:</label>
+    </div>
+    
+    <div class="inputbox">
+    <input type="text" id="Apellido1" required><br>
+    <label for="Apellido1">Apellido Paterno:</label>
+    </div>
+
+    <div class="inputbox">
+    <input type="text" id="Apellido2" required><br>
+    <label for="Apellido2">Apellido Materno:</label>
+    </div>
+    
+    <div class="inputbox">
+    <input type="password" id="ContrasenaAdmin" required><br>
+    <label for="ContrasenaAdmin">Contraseña:</label>
+    </div>
+
+    <button type="submit">Dar de Alta</button>
+  </form>
+  <div id="mensaje"></div>
+  </div>
+        </div>
+    </section>
+</body>
+</html>
